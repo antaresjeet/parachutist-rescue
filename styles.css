@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -8,17 +13,11 @@ body {
   background-image: url('/assets/background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Skranji';
 }
 
 canvas {
   border: 1px solid black;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .game-popup {
