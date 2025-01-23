@@ -9,7 +9,7 @@ window.onload = () => {
   const gamePopup = document.querySelector('.game-popup') as HTMLDivElement;
   const startButton = document.querySelector('.start-game') as HTMLButtonElement;
 
-  const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const isTouchDevice = () => 'ontouchstart' in window || (navigator.maxTouchPoints & 0xFF);
   const isScreenTooSmall = () => window.innerWidth < 1024 || window.innerHeight < 400;
 
   const isDeviceOk = () => {
